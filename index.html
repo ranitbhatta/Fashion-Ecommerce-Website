@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bangoprajukti — premium fashion essentials with a refined editorial shopping experience.">
+    <meta name="theme-color" content="#f7f3d8">
+    <title>Bangoprajukti — Premium Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="announcement">
+        <span>NEW SEASON · PREMIUM EVERYDAY ESSENTIALS</span>
+        <button id="closeAnnouncement" aria-label="Dismiss announcement">×</button>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a class="brand" href="#home" aria-label="Bangoprajukti home">
+                <span class="brand-kicker">BRAND NAME</span>
+                <strong class="brand-name">BANGOPRAJUKTI</strong>
+            </a>
+
+            <nav class="main-nav" aria-label="Primary navigation">
+                <a class="active" href="#home">Home</a>
+                <a href="#collection">Collection</a>
+                <a href="#featured">Featured</a>
+                <a href="#story">Our Story</a>
+                <a href="#newsletter">Journal</a>
+            </nav>
+
+            <div class="header-actions">
+                <button id="searchOpen" class="header-icon" type="button" aria-label="Search">⌕</button>
+                <button id="wishlistOpen" class="header-icon" type="button" aria-label="Wishlist">
+                    ♡<span class="header-badge" id="wishlistCount">0</span>
+                </button>
+                <button id="cartOpen" class="header-icon" type="button" aria-label="Shopping cart">
+                    🛒<span class="header-badge" id="cartCount">0</span>
+                </button>
+                <button id="menuOpen" class="header-icon menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+            </div>
+        </div>
+
+        <div class="container mobile-panel" id="mobilePanel">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#featured">Featured</a>
+            <a href="#story">Our Story</a>
+            <a href="#newsletter">Journal</a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" id="home">
+            <div class="hero-content container">
+                <div class="hero-copy">
+                    <span class="eyebrow">THE NEW STANDARD OF EVERYDAY STYLE</span>
+                    <h1>Know your fashion's <span>destination.</span></h1>
+                    <p>
+                        Refined silhouettes, premium fabrics and timeless colourways —
+                        designed to make everyday dressing feel exceptional.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#collection" class="primary-button">Shop collection <span>→</span></a>
+                        <button class="text-button" id="watchStory" type="button">Discover the story <span>↗</span></button>
+                    </div>
+
+                    <div class="hero-notes">
+                        <span><b>01</b> Premium cotton</span>
+                        <span><b>02</b> Modern fit</span>
+                        <span><b>03</b> Easy checkout</span>
+                    </div>
+                </div>
+
+                <div class="hero-product" aria-label="Featured premium polo shirt">
+                    <div class="hero-aura"></div>
+                    <div class="hero-frame"></div>
+                    <img id="heroProductImage"
+                         src="images/navy-polo.png"
+                         alt="Premium navy polo shirt"
+                         data-fallback-label="NAVY POLO">
+                    <div class="hero-floating-note">
+                        <span>EDITOR'S PICK</span>
+                        <strong>CL-HB-SB205</strong>
+                    </div>
+                </div>
+
+                <aside class="hero-side">
+                    <span class="side-label">SIGNATURE PIECE</span>
+                    <h2>Everyday<br><em>luxury.</em></h2>
+                    <p>
+                        100% premium cotton, balanced proportions and a quiet,
+                        confident finish.
+                    </p>
+
+                    <div class="hero-product-meta">
+                        <span>₹1,999</span>
+                        <small>Inclusive of taxes</small>
+                    </div>
+
+                    <div class="hero-palette" aria-label="Product colour options">
+                        <button class="palette-dot active" data-color="Navy" data-image="images/navy-polo.png" data-price="1999" aria-label="Navy"></button>
+                        <button class="palette-dot" data-color="White" data-image="images/white-polo.png" data-price="1899" aria-label="White"></button>
+                        <button class="palette-dot" data-color="Red" data-image="images/red-polo.png" data-price="1799" aria-label="Red"></button>
+                        <button class="palette-dot" data-color="Grey" data-image="images/men-grey-polo.png" data-price="1899" aria-label="Grey"></button>
+                    </div>
+
+                    <button class="dark-button full" id="heroAdd" type="button">Add to bag</button>
+                    <button class="outline-button full" id="heroQuickView" type="button">Quick view</button>
+                </aside>
+            </div>
+        </section>
+
+        <section class="marquee" aria-label="Brand values">
+            <div class="marquee-track">
+                <span>PREMIUM COTTON</span><i>✦</i>
+                <span>REFINED FIT</span><i>✦</i>
+                <span>TIMELESS STYLE</span><i>✦</i>
+                <span>DESIGNED FOR EVERYDAY</span><i>✦</i>
+                <span>PREMIUM COTTON</span><i>✦</i>
+                <span>REFINED FIT</span><i>✦</i>
+            </div>
+        </section>
+
+        <section class="section collection" id="collection">
+            <div class="container">
+                <div class="section-heading split-heading">
+                    <div>
+                        <span class="eyebrow">CURATED COLLECTION</span>
+                        <h2>Pieces with a point of view.</h2>
+                    </div>
+                    <p>
+                        Explore a focused edit of essentials across clean tailoring,
+                        relaxed layers and confident colour.
+                    </p>
+                </div>
+
+                <div class="filter-toolbar">
+                    <div class="filter-tabs" role="tablist" aria-label="Product filters">
+                        <button class="filter-tab active" data-filter="all" type="button">All</button>
+                        <button class="filter-tab" data-filter="men" type="button">Men</button>
+                        <button class="filter-tab" data-filter="women" type="button">Women</button>
+                        <button class="filter-tab" data-filter="unisex" type="button">Unisex</button>
+                    </div>
+
+                    <button class="sort-button" id="sortButton" type="button">
+                        <span>Sort</span><strong id="sortLabel">Featured</strong>⌄
+                    </button>
+                </div>
+
+                <div class="product-grid" id="productGrid"></div>
+            </div>
+        </section>
+
+        <section class="feature-banner" id="featured">
+            <div class="container feature-banner-inner">
+                <div class="feature-visual">
+                    <div class="feature-glow"></div>
+                    <div class="feature-copy-art">
+                        <span>02 / 04</span>
+                        <strong>FORM<br>FOLLOWS<br>FEELING.</strong>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <span class="eyebrow">THE EDIT</span>
+                    <h2>Quiet confidence, designed into every detail.</h2>
+                    <p>
+                        From the collar line to the final stitch, our essentials
+                        are built around balance — nothing excessive, nothing accidental.
+                    </p>
+                    <a href="#collection" class="secondary-link">Explore the edit →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section story" id="story">
+            <div class="container story-grid">
+                <div class="story-copy">
+                    <span class="eyebrow">OUR STORY</span>
+                    <h2>Less noise. Better clothes.</h2>
+                    <p>
+                        Bangoprajukti is built around a simple idea: modern wardrobe
+                        essentials should feel considered, wearable and quietly premium.
+                    </p>
+                    <p>
+                        We focus on versatile pieces that move naturally from weekday
+                        to weekend, with clean details and materials selected for comfort.
+                    </p>
+                    <a href="#newsletter" class="secondary-link">Read the journal →</a>
+                </div>
+
+                <div class="story-stats">
+                    <div><strong>100%</strong><span>Premium cotton focus</span></div>
+                    <div><strong>24/7</strong><span>Style, online</span></div>
+                    <div><strong>01</strong><span>Clear design philosophy</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section newsletter" id="newsletter">
+            <div class="container newsletter-card">
+                <div>
+                    <span class="eyebrow">THE JOURNAL</span>
+                    <h2>Get the next drop first.</h2>
+                    <p>New arrivals, styling edits and private previews — delivered occasionally.</p>
+                </div>
+                <form id="newsletterForm" class="newsletter-form" novalidate>
+                    <input id="newsletterEmail" type="email" placeholder="Your email address" aria-label="Email address" required>
+                    <button class="dark-button" type="submit">Join the list</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div>
+                <span class="brand-kicker">BRAND NAME</span>
+                <strong class="brand-name">BANGOPRAJUKTI</strong>
+                <p>Premium everyday fashion with a refined point of view.</p>
+            </div>
+            <div class="footer-links">
+                <div><strong>Explore</strong><a href="#collection">Collection</a><a href="#featured">Featured</a></div>
+                <div><strong>Company</strong><a href="#story">Our Story</a><a href="#newsletter">Journal</a></div>
+                <div><strong>Support</strong><a href="#">Shipping</a><a href="#">Contact</a></div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© 2026 Bangoprajukti. All rights reserved.</span>
+            <span>Crafted for modern wardrobes.</span>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="drawer cart-drawer" id="cartDrawer" aria-hidden="true">
+        <div class="drawer-header">
+            <div><span class="eyebrow">YOUR BAG</span><h2>Shopping bag</h2></div>
+            <button class="drawer-close" data-close="cartDrawer" aria-label="Close cart">×</button>
+        </div>
+        <div class="drawer-body" id="cartItems"></div>
+        <div class="drawer-footer">
+            <div class="drawer-total"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div>
+            <button class="dark-button full" id="checkoutButton" type="button">Proceed to checkout</button>
+            <small>Demo checkout. Connect your payment gateway before taking live orders.</small>
+        </div>
+    </aside>
+
+    <aside class="drawer wishlist-drawer" id="wishlistDrawer" aria-hidden="true">
+        <div class="drawer-header">
+            <div><span class="eyebrow">SAVED FOR LATER</span><h2>Wishlist</h2></div>
+            <button class="drawer-close" data-close="wishlistDrawer" aria-label="Close wishlist">×</button>
+        </div>
+        <div class="drawer-body" id="wishlistItems"></div>
+    </aside>
+
+    <div class="modal" id="searchModal" aria-hidden="true">
+        <div class="modal-card search-modal-card">
+            <button class="modal-close" data-close="searchModal" aria-label="Close search">×</button>
+            <span class="eyebrow">SEARCH</span>
+            <h2>Find your next piece.</h2>
+            <div class="search-field">
+                <span>⌕</span>
+                <input id="siteSearch" type="search" placeholder="Search products or colours..." autocomplete="off">
+            </div>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="quickViewModal" aria-hidden="true">
+        <div class="modal-card quick-view">
+            <button class="modal-close" data-close="quickViewModal" aria-label="Close quick view">×</button>
+            <div class="quick-view-grid">
+                <div class="quick-image-wrap"><img id="quickImage" src="" alt=""></div>
+                <div class="quick-copy">
+                    <span class="eyebrow" id="quickCategory">SIGNATURE</span>
+                    <h2 id="quickName">Product</h2>
+                    <p id="quickDescription"></p>
+                    <div class="quick-price" id="quickPrice">₹0</div>
+                    <div class="quick-meta" id="quickMeta"></div>
+                    <button class="dark-button full" id="quickAdd" type="button">Add to bag</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
